@@ -1,9 +1,19 @@
+'use client';
 
 import "./globals.css";
+
+import { useTarot } from "./component/useTarot";
+
+
 export default function Home() {
+
+  const { tarots } = useTarot();
+
   return (
     <>
-    <h1 className="title">Ciao Tarocchi</h1>
+    {tarots.map((curTarot) => (
+      <h1 key={curTarot.id} className="title">{curTarot.nome}</h1>
+    ))}
     </>
   );
 }
