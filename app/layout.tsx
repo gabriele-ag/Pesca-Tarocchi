@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+import Link from "next/link";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,6 +29,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header className="header">
+          <Link href={"/"}>Home</Link>
+          <Link href={"/Cartadelgiorno"}>Carta del giorno</Link>
+          <Link href={"/Ruotadellanno"}>Ruota dell'anno</Link>
+          <Link href={"/Stesaatre"}>Stesa a tre carte</Link>
+        </header>
         {children}
       </body>
     </html>

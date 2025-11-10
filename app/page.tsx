@@ -4,16 +4,23 @@ import "./globals.css";
 
 import { useTarot } from "./component/useTarot";
 
+import { useState } from "react";
+
 
 export default function Home() {
 
   const { tarots } = useTarot();
+  
+
 
   return (
     <>
-    {tarots.map((curTarot) => (
-      <h1 key={curTarot.id} className="title">{curTarot.nome}</h1>
-    ))}
+    <div>
+      <h1>Home</h1>
+      <div>
+
+      </div>
+    </div>
     </>
   );
 }
