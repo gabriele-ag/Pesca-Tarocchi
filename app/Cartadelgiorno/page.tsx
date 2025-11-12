@@ -4,12 +4,17 @@ import { useState, useEffect } from "react"
 import { useTarot } from "../component/useTarot"
 
 import styles from "./CSS/cartadelgiorno.module.css"
+import { Tarot } from "../api/tarocchi/model/tarot"
+
+type CartaEstratta = Tarot & {
+  significatoScelto: string
+}
 
 export default function CartaDelGiorno() {
 
-    const {tarots} = useTarot()
+    const { tarots } = useTarot()
 
-    const [carta, setCarta] = useState<typeof tarots[0] | null>(null)
+    const [carta, setCarta] = useState<CartaEstratta | null>(null)
     const [data, setData] = useState<string | null>(null)
 
     useEffect(() => {
@@ -19,7 +24,7 @@ export default function CartaDelGiorno() {
         const dataOdierna = new Date().toLocaleDateString()
         if (salvaCarta && salvaData === dataOdierna) {
             setData(salvaData)
-            setCarta(JSON.parse(salvaCarta))
+            setCarta(JSON.parse(salvaCarta) as CartaEstratta)
         } else {
             localStorage.removeItem("carta")
             localStorage.removeItem("data")
@@ -33,12 +38,30 @@ export default function CartaDelGiorno() {
     const pescaCarta = () => {
         const cartaCasuale = Math.floor(Math.random() * tarots.length)
         const cartaPescata = tarots[cartaCasuale]
+
+        const orientamento = Math.random() < 0.5
         const dataDiOggi = new Date().toLocaleDateString()
 
-        setCarta(cartaPescata)
-        setData(dataDiOggi)
+        console.log(orientamento)
+        if (orientamento === true) {
+            const cartaDritta: CartaEstratta = {
+                ...cartaPescata,
+                significatoScelto: cartaPescata.significato.dritto
+            }
+            setCarta(cartaDritta)
+            setData(dataDiOggi)
 
-        localStorage.setItem("carta", JSON.stringify(cartaPescata))
+            localStorage.setItem("carta", JSON.stringify(cartaDritta))
+
+        } else {
+            const cartaRovesciata: CartaEstratta = {
+                ...cartaPescata,
+                significatoScelto: cartaPescata.significato.rovesciato
+            }
+            setCarta(cartaRovesciata)
+            setData(dataDiOggi)
+
+        }
         localStorage.setItem("data", dataDiOggi)
     }
 
@@ -54,6 +77,7 @@ export default function CartaDelGiorno() {
             {carta && (
                 <div>
                     <h2>{carta.nome}</h2>
+                    <h4>{carta.significatoScelto}</h4>
                     <p>{carta.messaggio}</p>
                 </div>
             )}

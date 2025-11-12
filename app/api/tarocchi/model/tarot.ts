@@ -3,8 +3,9 @@ export type Tarot = {
     numero: number,
     nome: string
     dritto: number,
-    significato_dritto: string,
-    significato_rovesciato: string,
+    significato: {
+        dritto: string,
+        rovesciato: string
+    }
     messaggio: string,
-
 }
