@@ -1,3 +1,3 @@
-Cosa mettere in un app per tarocchi:
+## Pesca Tarocchi
 
-- Ruota dell'anno, 1 per ogni mese + 1 carta dell' anno
+In developing

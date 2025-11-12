@@ -1,10 +1,56 @@
+:root {
+    --common-color-1: #EE905A;
+    --common-color-2: #D0D0D0;
+}
+
+.container {
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+    padding: 0;
+}
+
 .button {
-    background-color: blue;
-    border: 1px solid white;
+    padding: 8px 10px;
+    border: 1px solid var(--common-color-1);
     cursor: pointer;
+    border-radius: 30px;
+    color: var(--common-color-1);
+}
+
+.title {
+    color: var(--common-color-1);
+}
+
+.descrizione {
+    margin-bottom: 50px;
+}
+
+.boxCartaDelGiorno {
+    display: flex;
+    justify-content: center;
+}
+
+.carta {
+    margin-top: 70px;
+    max-width: 60%;
+    padding: 20px 20px;
+    border: solid 1px var(--common-color-1);
+    border-radius: 30px;
+}
+
+.nomeCarta {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--common-color-1);
+}
+
+.significatoCarta,
+.messaggioCarta,
+.descrizione {
+    color: var(--common-color-2);
 }
 
 .titlePage {
     font-size: 20px;
-    
 }

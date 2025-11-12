@@ -42,7 +42,6 @@ export default function CartaDelGiorno() {
         const orientamento = Math.random() < 0.5
         const dataDiOggi = new Date().toLocaleDateString()
 
-        console.log(orientamento)
         if (orientamento === true) {
             const cartaDritta: CartaEstratta = {
                 ...cartaPescata,
@@ -71,16 +70,22 @@ export default function CartaDelGiorno() {
 
 
     return (
-        <>
-            <h1>Questa è la carta del giorno</h1>
-            <button className={styles.button} onClick={pescaCarta} disabled={cartaGiornaliera}>{cartaGiornaliera ? "Carta già pescata per oggi" : "Pesca una carta"}</button>
-            {carta && (
-                <div>
-                    <h2>{carta.nome}</h2>
-                    <h4>{carta.significatoScelto}</h4>
-                    <p>{carta.messaggio}</p>
+        <section>
+            
+            <div className={styles.container}>
+                    <h1 className={styles.title}>Questa è la carta del giorno</h1>
+                    <p className={styles.descrizione}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, placeat ratione.</p>
+                    <button className={styles.button} onClick={pescaCarta} disabled={cartaGiornaliera}>{cartaGiornaliera ? "Carta già pescata per oggi" : "Pesca una carta"}</button>
+                <div className={styles.boxCartaDelGiorno}>
+                    {carta && (
+                        <div className={styles.carta}>
+                            <h2 className={styles.nomeCarta}>{carta.nome}</h2>
+                            <p className={styles.significatoCarta}>{carta.significatoScelto}</p>
+                            <p className={styles.messaggioCarta}>{carta.messaggio}</p>
+                        </div>
+                    )}
                 </div>
-            )}
-        </>
+            </div>
+        </section>
     )
 }

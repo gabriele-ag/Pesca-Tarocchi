@@ -29,11 +29,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="header">
-          <Link href={"/"}>Home</Link>
-          <Link href={"/Cartadelgiorno"}>Carta del giorno</Link>
-          <Link href={"/Ruotadellanno"}>Ruota dell'anno</Link>
-          <Link href={"/Stesaatre"}>Stesa a tre carte</Link>
+        <header>
+          <div className="nav">
+            <Link href={"/"}>Home</Link>
+            <Link href={"/Cartadelgiorno"}>Carta del giorno</Link>
+            <Link href={"/Ruotadellanno"}>Ruota dell'anno</Link>
+            <Link href={"/Stesaatre"}>Stesa a tre carte</Link>
+          </div>
         </header>
         {children}
       </body>
