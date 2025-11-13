@@ -1,4 +1,5 @@
 [
+  
   {
     "id": 0,
     "numero": 0,
@@ -8,7 +9,8 @@
       "dritto": "Nuovi inizi, spontaneità, libertà, avventura",
       "rovesciato": "Imprudenza, mancanza di direzione, rischio eccessivo"
     },
-    "messaggio": "Abbraccia l'ignoto con fiducia"
+    "messaggio": "Abbraccia l'ignoto con fiducia",
+    "img": "/ilmatto.jpg"
   },
   {
     "id": 1,
@@ -19,7 +21,8 @@
       "dritto": "Potere personale, creatività, manifestazione",
       "rovesciato": "Inganno, manipolazione, potenziale sprecato"
     },
-    "messaggio": "Hai tutto ciò che ti serve per riuscire"
+    "messaggio": "Hai tutto ciò che ti serve per riuscire",
+    "img": "/mago.jpg"
   },
   {
     "id": 2,
@@ -30,7 +33,8 @@
       "dritto": "Intuizione, saggezza interiore, mistero",
       "rovesciato": "Segreti, disconnessione, superficialità"
     },
-    "messaggio": "Ascolta la tua voce interiore"
+    "messaggio": "Ascolta la tua voce interiore",
+    "img": "/papessa.jpg"
   },
   {
     "id": 3,
@@ -41,7 +45,8 @@
       "dritto": "Fertilità, abbondanza, nutrimento",
       "rovesciato": "Dipendenza, blocco creativo, squilibrio"
     },
-    "messaggio": "Coltiva ciò che ami"
+    "messaggio": "Coltiva ciò che ami",
+    "img": "/imperatrice.jpg"
   },
   {
     "id": 4,
@@ -52,7 +57,8 @@
       "dritto": "Stabilità, autorità, struttura",
       "rovesciato": "Tirannia, rigidità, controllo eccessivo"
     },
-    "messaggio": "Guida con fermezza e cuore"
+    "messaggio": "Guida con fermezza e cuore",
+    "img": "/imperatore.jpg"
   },
   {
     "id": 5,
@@ -63,7 +69,8 @@
       "dritto": "Tradizione, spiritualità, insegnamento",
       "rovesciato": "Dogmatismo, ribellione, falsi profeti"
     },
-    "messaggio": "Cerca la verità oltre le apparenze"
+    "messaggio": "Cerca la verità oltre le apparenze",
+    "img": "/papa.jpg"
   },
   {
     "id": 6,
@@ -74,7 +81,8 @@
       "dritto": "Amore, unione, scelte importanti",
       "rovesciato": "Conflitto, indecisione, disarmonia"
     },
-    "messaggio": "Segui il cuore con consapevolezza"
+    "messaggio": "Segui il cuore con consapevolezza",
+    "img": "/amanti.jpg"
   },
   {
     "id": 7,
@@ -85,7 +93,8 @@
       "dritto": "Vittoria, determinazione, controllo",
       "rovesciato": "Perdita di controllo, aggressività, ostacoli"
     },
-    "messaggio": "Avanza con fiducia e disciplina"
+    "messaggio": "Avanza con fiducia e disciplina",
+    "img": "/carro.jpg"
   },
   {
     "id": 8,
@@ -96,7 +105,8 @@
       "dritto": "Coraggio, pazienza, compassione",
       "rovesciato": "Debolezza, impulsività, paura"
     },
-    "messaggio": "La vera forza è dentro di te"
+    "messaggio": "La vera forza è dentro di te",
+    "img": "/forza.jpg"
   },
   {
     "id": 9,
@@ -107,7 +117,8 @@
       "dritto": "Ricerca interiore, saggezza, introspezione",
       "rovesciato": "Isolamento, solitudine, chiusura"
     },
-    "messaggio": "Trova la luce nel silenzio"
+    "messaggio": "Trova la luce nel silenzio",
+    "img": "/eremita.jpg"
   },
   {
     "id": 10,
@@ -118,7 +129,8 @@
       "dritto": "Destino, cambiamento, cicli",
       "rovesciato": "Sfortuna, resistenza al cambiamento, stagnazione"
     },
-    "messaggio": "Accogli il cambiamento come opportunità"
+    "messaggio": "Accogli il cambiamento come opportunità",
+    "img": "/fortuna.jpg"
   },
   {
     "id": 11,
@@ -129,7 +141,8 @@
       "dritto": "Equilibrio, verità, responsabilità",
       "rovesciato": "Ingiustizia, parzialità, negazione"
     },
-    "messaggio": "Agisci con integrità"
+    "messaggio": "Agisci con integrità",
+    "img": "/giustizia.jpg"
   },
   {
     "id": 12,
@@ -140,7 +153,8 @@
       "dritto": "Sospensione, sacrificio, nuova prospettiva",
       "rovesciato": "Stallo, resistenza, martirio inutile"
     },
-    "messaggio": "Lascia andare per vedere oltre"
+    "messaggio": "Lascia andare per vedere oltre",
+    "img": "/appeso.jpg"
   },
   {
     "id": 13,
@@ -151,7 +165,8 @@
       "dritto": "Trasformazione, fine, rinascita",
       "rovesciato": "Resistenza al cambiamento, stagnazione"
     },
-    "messaggio": "Chiudi un ciclo per rinascere"
+    "messaggio": "Chiudi un ciclo per rinascere",
+    "img": "/morte.jpg"
   },
   {
     "id": 14,
@@ -162,7 +177,8 @@
       "dritto": "Armonia, pazienza, equilibrio",
       "rovesciato": "Eccessi, squilibrio, impazienza"
     },
-    "messaggio": "Trova il tuo centro"
+    "messaggio": "Trova il tuo centro",
+    "img": "/temperanza.jpg"
   },
   {
     "id": 15,
@@ -173,7 +189,8 @@
       "dritto": "Dipendenze, tentazioni, materialismo",
       "rovesciato": "Liberazione, consapevolezza, rottura delle catene"
     },
-    "messaggio": "Riconosci ciò che ti imprigiona"
+    "messaggio": "Riconosci ciò che ti imprigiona",
+    "img": "/diavolo.jpg"
   },
   {
     "id": 16,
@@ -184,7 +201,8 @@
       "dritto": "Crollo, rivelazione, cambiamento improvviso",
       "rovesciato": "Evitare il disastro, paura del cambiamento"
     },
-    "messaggio": "Dalle rovine nasce la verità"
+    "messaggio": "Dalle rovine nasce la verità",
+    "img": "/torre.jpg"
   },
   {
     "id": 17,
@@ -195,50 +213,56 @@
       "dritto": "Speranza, ispirazione, guarigione",
       "rovesciato": "Disillusione, perdita di fede"
     },
-    "messaggio": "Segui la tua luce interiore"
+    "messaggio": "Segui la tua luce interiore",
+    "img": "/stella.jpg"
   },
   {
-    "id": 18,
-    "numero": 18,
-    "nome": "La Luna",
-    "dritto": 1,
-    "significato": {
-      "dritto": "Intuizione, sogni, illusioni",
-      "rovesciato": "Inganno, confusione, ansia"
-    },
-    "messaggio": "Fidati del tuo intuito"
+  "id": 18,
+  "numero": 18,
+  "nome": "La Luna",
+  "dritto": 1,
+  "significato": {
+    "dritto": "Intuizione, sogni, illusioni",
+    "rovesciato": "Inganno, confusione, ansia"
   },
-  {
-    "id": 19,
-    "numero": 19,
-    "nome": "Il Sole",
-    "dritto": 0,
-    "significato": {
-      "dritto": "Gioia, successo, vitalità",
-      "rovesciato": "Eccesso di fiducia, superficialità"
-    },
-    "messaggio": "Splendi senza paura"
+  "messaggio": "Fidati del tuo intuito",
+  "img": "/luna.jpg"
+},
+{
+  "id": 19,
+  "numero": 19,
+  "nome": "Il Sole",
+  "dritto": 0,
+  "significato": {
+    "dritto": "Gioia, successo, vitalità",
+    "rovesciato": "Eccesso di fiducia, superficialità"
   },
-  {
-    "id": 20,
-    "numero": 20,
-    "nome": "Il Giudizio",
-    "dritto": 1,
-    "significato": {
-      "dritto": "Rinascita, risveglio, redenzione",
-      "rovesciato": "Rimorso, rifiuto, stagnazione"
-    },
-    "messaggio": "Accogli il cambiamento con consapevolezza"
+  "messaggio": "Splendi senza paura",
+  "img": "/sole.jpg"
+},
+{
+  "id": 20,
+  "numero": 20,
+  "nome": "Il Giudizio",
+  "dritto": 1,
+  "significato": {
+    "dritto": "Rinascita, risveglio, redenzione",
+    "rovesciato": "Rimorso, rifiuto, stagnazione"
   },
-  {
-    "id": 21,
-    "numero": 21,
-    "nome": "Il Mondo",
-    "dritto": 0,
-    "significato": {
-      "dritto": "Completamento, realizzazione, unità",
-      "rovesciato": "Incompiutezza, ritardi, dispersione"
-    },
-    "messaggio": "Celebra il tuo viaggio"
-  }
+  "messaggio": "Accogli il cambiamento con consapevolezza",
+  "img": "/giustizia.jpg"
+},
+{
+  "id": 21,
+  "numero": 21,
+  "nome": "Il Mondo",
+  "dritto": 0,
+  "significato": {
+    "dritto": "Completamento, realizzazione, unità",
+    "rovesciato": "Incompiutezza, ritardi, dispersione"
+  },
+  "messaggio": "Celebra il tuo viaggio",
+  "img": "/ilmondo.jpg"
+}
 ]
+

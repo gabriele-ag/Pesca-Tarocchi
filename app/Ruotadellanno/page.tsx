@@ -3,14 +3,14 @@
 import { useState } from "react"
 import { useTarot } from "../component/useTarot"
 
+// CSS
 import styles from "./CSS/ruotadellanno.module.css"
 
 
-
 export default function RuotaDelGiorno() {
-    const { tarots } = useTarot()
+        const { tarots } = useTarot()
 
-        const [mazzo, setMazzo] = useState(tarots)
+        
         const [carte, setCarta] = useState<Array<(typeof tarots)[number]>>([])
     
         const pescaCarta = () => {
@@ -30,7 +30,7 @@ export default function RuotaDelGiorno() {
     return (
             <section>
             <div className={styles.container}>
-                <h1 className={styles.title}>Stesa a tre carte</h1>
+                <h1 className={styles.title}>Ruota dell'anno</h1>
                 <p className={styles.descrizione}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae necessitatibus ipsa officia saepe tempora unde qui, quibusdam, cumque vitae natus, quidem odio eius repellendus eligendi doloribus quae. Facere, cupiditate dolorum!</p>
                 <button className={styles.button} onClick={pescaCarta} disabled={limiteCarte}>{limiteCarte ? 'Tutte le carte pescate' : 'Pesca carta'}</button>
 
@@ -38,8 +38,8 @@ export default function RuotaDelGiorno() {
                     <div className={styles.boxCarte}>
                         {carte.map((curCard, index) => (
                             <div key={index}
-                            className={`${styles.carta} ${index === centro ? styles.centrale : ""}`}>                                
-                                    <h2 className={styles.nomeCarta}>{curCard.nome}</h2>                               
+                            className={`${styles.carta} ${index === centro ? styles.centrale : ""}`}>
+                                <img src={curCard.img} alt={curCard.nome} />                                                              
                             </div>
                         ))}
                     </div>

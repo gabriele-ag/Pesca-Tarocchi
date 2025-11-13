@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { useTarot } from "../component/useTarot"
 
+//CSS
 import styles from "./CSS/stesaatre.module.css"
 
 export default function StesaATre() {
@@ -23,7 +24,6 @@ export default function StesaATre() {
 
     const limiteCarte = carte.length >= 3
     
-
 
     return (
         <section>

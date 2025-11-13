@@ -8,4 +8,5 @@ export type Tarot = {
         rovesciato: string
     }
     messaggio: string,
+    img: string
 }

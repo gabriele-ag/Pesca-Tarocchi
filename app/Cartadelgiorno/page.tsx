@@ -49,8 +49,9 @@ export default function CartaDelGiorno() {
             }
             setCarta(cartaDritta)
             setData(dataDiOggi)
-
+            
             localStorage.setItem("carta", JSON.stringify(cartaDritta))
+            localStorage.setItem("data", dataDiOggi)
 
         } else {
             const cartaRovesciata: CartaEstratta = {
@@ -59,9 +60,9 @@ export default function CartaDelGiorno() {
             }
             setCarta(cartaRovesciata)
             setData(dataDiOggi)
-
+            localStorage.setItem("carta", JSON.stringify(cartaRovesciata))
+            localStorage.setItem("data", dataDiOggi)
         }
-        localStorage.setItem("data", dataDiOggi)
     }
 
     const oggi = new Date().toLocaleDateString()
