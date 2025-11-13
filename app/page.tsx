@@ -1,26 +1,21 @@
 'use client';
 
 import "./globals.css";
-
 import { useTarot } from "./component/useTarot";
-
-import { useState } from "react";
 
 
 export default function Home() {
 
-  const { tarots } = useTarot();
-  
-
+  const { tarots } = useTarot()
 
   return (
     <>
-    <div>
-      <h1>Home</h1>
-      <div>
-
+    <section className="hero">
+      <div className="container">
+        <h1 className="title-home">Pesca Tarocchi</h1>
+        <p className="description">Scopri le carte <br />Rivela il tuo futuro</p>
       </div>
-    </div>
+    </section>
     </>
   );
 }

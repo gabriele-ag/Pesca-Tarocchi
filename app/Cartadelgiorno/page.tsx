@@ -72,11 +72,13 @@ export default function CartaDelGiorno() {
 
 
     return (
-        <section>
+        <section className={styles.section}>
             
             <div className={styles.container}>
-                    <h1 className={styles.title}>Questa è la carta del giorno</h1>
-                    <p className={styles.descrizione}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, placeat ratione.</p>
+                    <h1 className={styles.title}>Carta del giorno</h1>
+                    <div className={styles.containerText}>
+                        <p className={styles.descrizione}>Un messaggio quotidiano che illumina il tuo cammino. La carta estratta oggi ti offre una guida simbolica, un invito a riflettere e a trovare ispirazione nelle energie che ti accompagnano.</p>
+                    </div>
                     <button className={styles.button} onClick={pescaCarta} disabled={cartaGiornaliera}>{cartaGiornaliera ? "Carta già pescata per oggi" : "Pesca una carta"}</button>
                 <div className={styles.boxCartaDelGiorno}>
                     {carta && (
@@ -85,8 +87,9 @@ export default function CartaDelGiorno() {
                                 <img className={styles.img} src={carta.img} alt={carta.nome} />
                             </div>
                             <div>
-                                <h2 className={styles.nomeCarta}>{carta.nome}</h2>
+                                <h4 className={styles.titleSignificato}>Significato</h4>
                                 <p className={styles.significatoCarta}>{carta.significatoScelto}</p>
+                                <h4 className={styles.titleMessaggio}>Messaggio del giorno</h4>
                                 <p className={styles.messaggioCarta}>{carta.messaggio}</p>
                             </div>
                         </>

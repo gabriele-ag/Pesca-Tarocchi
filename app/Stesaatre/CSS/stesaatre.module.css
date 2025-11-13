@@ -1,5 +1,5 @@
 :root {
-    --common-color-1: #EE905A;
+    --common-color-1: #eea95a;
     --common-color-2: #D0D0D0;
     --common-color-3: #1F1713;
     --common-color-4: #403026;
@@ -10,6 +10,16 @@
     max-width: 80%;
     margin: auto;
     padding: 0;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+
+.containerText {
+    max-width: 60%;
+    margin: auto;
 }
 
 .title {
@@ -33,6 +43,12 @@
     cursor: pointer;
     border-radius: 30px;
     color: var(--common-color-1);
+    margin-bottom: 50px;
+}
+
+.button:hover {
+    color: var(--common-color-3);
+    background-color: var(--common-color-1);
 }
 
 .descrizione {

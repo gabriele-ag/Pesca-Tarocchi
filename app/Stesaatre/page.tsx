@@ -27,11 +27,13 @@ export default function StesaATre() {
     
 
     return (
-        <section>
+        <section className={styles.section}>
             <div className={styles.container}>
                 <h1 className={styles.title}>Stesa a tre carte</h1>
-                <p className={styles.descrizione}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae necessitatibus ipsa officia saepe tempora unde qui, quibusdam, cumque vitae natus, quidem odio eius repellendus eligendi doloribus quae. Facere, cupiditate dolorum!</p>
-                <button className={styles.button} onClick={pescaCarta} disabled={limiteCarte}>{carte.length === 3 ? 'Tutte le carte pescate' : 'Pesca carta'}</button>
+                <div className={styles.containerText}>
+                    <p className={styles.descrizione}>Passato, presente e futuro si intrecciano. Questa stesa ti aiuta a comprendere le radici delle tue esperienze, la realtà che stai vivendo e le possibilità che si aprono davanti a te.</p>
+                    <button className={styles.button} onClick={pescaCarta} disabled={limiteCarte}>{carte.length === 3 ? 'Tutte le carte pescate' : 'Pesca carta'}</button>
+                </div>
 
                 {carte.length > 0 && (
                     <div className={styles.boxCarte}>

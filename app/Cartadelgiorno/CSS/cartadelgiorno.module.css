@@ -1,7 +1,9 @@
 :root {
-    --common-color-1: #EE905A;
+    --common-color-1: #eea95a;
     --common-color-2: #D0D0D0;
 }
+
+
 
 .container {
     text-align: center;
@@ -10,14 +12,22 @@
     padding: 0;
 }
 
-.img {
-    margin-bottom: 20px;
+.section {
+    padding: 50px 0;
+}
+
+
+.containerText {
+    max-width: 60%;
+    margin: auto;
 }
 
 .descrizione,
 .button,
 .messaggioCarta,
-.significatoCarta {
+.significatoCarta,
+.titleSignificato,
+.titleMessaggio {
     font-family: var(--font-bodoni), serif;
 }
 
@@ -27,6 +37,12 @@
     cursor: pointer;
     border-radius: 30px;
     color: var(--common-color-1);
+    margin-bottom: 50px;
+}
+
+.button:hover {
+    color: var(--common-color-3);
+    background-color: var(--common-color-1);
 }
 
 .title {
@@ -50,6 +66,7 @@
     max-width: 250px;
     background: #fff;
     margin: auto;
+    margin-bottom: 30px;
 }
 
 .nomeCarta {
@@ -66,4 +83,17 @@
 
 .titlePage {
     font-size: 20px;
+}
+
+.titleSignificato,
+.titleMessaggio {
+    font-size: 30px;
+    color: var(--common-color-1);
+    margin-bottom: 5px;
+}
+
+.significatoCarta,
+.messaggioCarta {
+    font-size: 18px;
+    margin-bottom: 30px;
 }

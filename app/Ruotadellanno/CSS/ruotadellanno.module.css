@@ -1,9 +1,10 @@
 :root {
-    --common-color-1: #EE905A;
+    --common-color-1: #eea95a;
     --common-color-2: #D0D0D0;
     --common-color-3: #1F1713;
     --common-color-4: #403026;
 }
+
 
 .container {
     text-align: center;
@@ -12,14 +13,30 @@
     padding: 0;
 }
 
+.section {
+    padding: 50px 0;
+}
+
+
+.containerText {
+    max-width: 60%;
+    margin: auto;
+}
+
 .title {
     font-size: 50px;
     font-family: var(--font-unifraktur), cursive;
     color: var(--common-color-1);
 }
 
+.title2 {
+    font-size: 30px;
+    color: var(--common-color-1);
+}
+
 .button,
-.descrizione {
+.descrizione,
+.title2 {
     font-family: var(--font-bodoni), serif;    
 }
 
@@ -29,6 +46,12 @@
     cursor: pointer;
     border-radius: 30px;
     color: var(--common-color-1);
+    margin-bottom: 50px;
+}
+
+.button:hover {
+    color: var(--common-color-3);
+    background-color: var(--common-color-1);
 }
 
 .descrizione {
@@ -43,12 +66,11 @@
 }
 
 .boxCarte {
-    display: grid;
-    grid-template-columns: repeat(3, 250px);
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    margin: auto;
+    gap: 50px;
+    max-width: 50%;
 }
 
 .nomeCarta {
@@ -58,16 +80,15 @@
 }
 
 .carta {
+    flex: 0 0 calc(33.333% - 50px);
     padding: 1rem;
     text-align: center;
     border-radius: 20px;
-    max-width: 80%;
     background: #fff;
     position: relative;
-    box-shadow: 0 0 30px 10px rgba(238, 144, 90, 0.25);
 }
 
 .centrale {
-    box-shadow: 0 0 30px 10px rgba(173, 173, 173, 0.4);
+    box-shadow: 0 0 30px 10px rgba(238, 144, 90, 0.5);
 }
 

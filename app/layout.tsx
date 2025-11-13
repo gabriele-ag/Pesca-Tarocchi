@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Arimo, Roboto_Mono, UnifrakturMaguntia, Bodoni_Moda } from "next/font/google";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 import "./globals.css";
 
 import Link from "next/link";
@@ -54,14 +56,22 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${arimo.variable} ${robotoMono.variable} ${unifraktur.variable} ${bodoni.variable} antialiased`}
       >
         <header>
-          <div className="nav">
-            <Link href={"/"}>Home</Link>
-            <Link href={"/Cartadelgiorno"}>Carta del giorno</Link>
-            <Link href={"/Ruotadellanno"}>Ruota dell'anno</Link>
-            <Link href={"/Stesaatre"}>Stesa a tre carte</Link>
+          <div className="header-flex">
+            <div>
+              <i className="fa-solid fa-moon logo"></i>
+            </div>
+            <nav className="nav">
+              <Link className="link-nav" href={"/"}>Home</Link>
+              <Link className="link-nav" href={"/Cartadelgiorno"}>Carta del giorno</Link>
+              <Link className="link-nav" href={"/Ruotadellanno"}>Ruota dell'anno</Link>
+              <Link className="link-nav" href={"/Stesaatre"}>Stesa a tre carte</Link>
+            </nav>
           </div>
         </header>
-        {children}
+        <main>
+          {children}
+        </main>
+        <footer></footer>
       </body>
     </html>
   );
