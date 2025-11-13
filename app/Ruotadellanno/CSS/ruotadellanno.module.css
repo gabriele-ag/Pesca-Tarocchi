@@ -49,9 +49,14 @@
 }
 
 .carta {
-  background: #f5f5f5;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 8px;
+    background: #f5f5f5;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.centrale {
+    background-color: var(--common-color-2);
+    color: var(--common-color-3) !important;
 }
 
