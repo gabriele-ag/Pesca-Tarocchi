@@ -10,6 +10,17 @@
     padding: 0;
 }
 
+.img {
+    margin-bottom: 20px;
+}
+
+.descrizione,
+.button,
+.messaggioCarta,
+.significatoCarta {
+    font-family: var(--font-bodoni), serif;
+}
+
 .button {
     padding: 8px 10px;
     border: 1px solid var(--common-color-1);
@@ -19,25 +30,26 @@
 }
 
 .title {
+    font-size: 50px;
+    font-family: var(--font-unifraktur), cursive;
     color: var(--common-color-1);
 }
 
 .descrizione {
+    font-family: var(--font-bodoni), serif;
+    font-size: 20px;
     margin-bottom: 50px;
 }
 
-.boxCartaDelGiorno {
-    display: flex;
-    justify-content: center;
-}
 
 .carta {
     margin-top: 70px;
     max-width: 60%;
-    padding: 20px 20px;
-    border: solid 1px var(--common-color-1);
+    padding: 10px 10px;
     border-radius: 30px;
-    box-shadow: 1px 1px 25px 10px rgba(250, 111, 31, 0.07)
+    max-width: 250px;
+    background: #fff;
+    margin: auto;
 }
 
 .nomeCarta {

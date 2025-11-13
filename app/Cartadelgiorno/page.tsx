@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { useTarot } from "../component/useTarot"
 
 import styles from "./CSS/cartadelgiorno.module.css"
+import 'animate.css'
 import { Tarot } from "../api/tarocchi/model/tarot"
 
 type CartaEstratta = Tarot & {
@@ -79,11 +80,16 @@ export default function CartaDelGiorno() {
                     <button className={styles.button} onClick={pescaCarta} disabled={cartaGiornaliera}>{cartaGiornaliera ? "Carta già pescata per oggi" : "Pesca una carta"}</button>
                 <div className={styles.boxCartaDelGiorno}>
                     {carta && (
-                        <div className={styles.carta}>
-                            <h2 className={styles.nomeCarta}>{carta.nome}</h2>
-                            <p className={styles.significatoCarta}>{carta.significatoScelto}</p>
-                            <p className={styles.messaggioCarta}>{carta.messaggio}</p>
-                        </div>
+                        <>
+                            <div className={`${styles.carta} animate_animated animate_bounce`}>
+                                <img className={styles.img} src={carta.img} alt={carta.nome} />
+                            </div>
+                            <div>
+                                <h2 className={styles.nomeCarta}>{carta.nome}</h2>
+                                <p className={styles.significatoCarta}>{carta.significatoScelto}</p>
+                                <p className={styles.messaggioCarta}>{carta.messaggio}</p>
+                            </div>
+                        </>
                     )}
                 </div>
             </div>

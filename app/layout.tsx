@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Arimo, Roboto_Mono, UnifrakturMaguntia, Bodoni_Moda } from "next/font/google";
 import "./globals.css";
 
 import Link from "next/link";
@@ -8,6 +8,30 @@ const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
+
+const bodoni = Bodoni_Moda ({
+  variable: "--font-bodoni",
+  weight: ["400", "700"],
+  subsets: ["latin"]
+})
+
+const arimo = Arimo({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-arimo"
+})
+
+const robotoMono = Roboto_Mono({
+  subsets: ["latin"],
+  weight: ["100", "400", "700"],
+  variable: "--font-roboto-mono"
+})
+
+const unifraktur = UnifrakturMaguntia({
+  subsets: ["latin"],
+  weight: "400", // questo font ha solo un peso
+  variable: "--font-unifraktur"
+})
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -27,7 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${arimo.variable} ${robotoMono.variable} ${unifraktur.variable} ${bodoni.variable} antialiased`}
       >
         <header>
           <div className="nav">

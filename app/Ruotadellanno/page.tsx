@@ -5,6 +5,7 @@ import { useTarot } from "../component/useTarot"
 
 // CSS
 import styles from "./CSS/ruotadellanno.module.css"
+import "animate.css"
 
 
 export default function RuotaDelGiorno() {
@@ -38,8 +39,8 @@ export default function RuotaDelGiorno() {
                     <div className={styles.boxCarte}>
                         {carte.map((curCard, index) => (
                             <div key={index}
-                            className={`${styles.carta} ${index === centro ? styles.centrale : ""}`}>
-                                <img src={curCard.img} alt={curCard.nome} />                                                              
+                            className={`${styles.carta} ${index === centro ? styles.centrale : ""} animate__animated animate__fadeInDown`}>
+                                <img className={styles.img} src={curCard.img} alt={curCard.nome} />                                                              
                             </div>
                         ))}
                     </div>

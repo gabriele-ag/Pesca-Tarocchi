@@ -5,6 +5,7 @@ import { useTarot } from "../component/useTarot"
 
 //CSS
 import styles from "./CSS/stesaatre.module.css"
+import "animate.css"
 
 export default function StesaATre() {
 
@@ -35,9 +36,8 @@ export default function StesaATre() {
                 {carte.length > 0 && (
                     <div className={styles.boxCarte}>
                         {carte.map((curCard, index) => (
-                            <div key={index}>
-                                <h2 className={styles.nomeCarta}>{curCard.nome}</h2>
-                                <p className={styles.messaggioCarta}>{curCard.messaggio}</p>
+                            <div className={`${styles.carta} animate__animated animate__fadeInDown`} key={index}>
+                                <img className={styles.img} src={curCard.img} alt={curCard.nome} />
                             </div>
                         ))}
                     </div>
