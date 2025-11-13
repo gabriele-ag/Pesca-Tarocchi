@@ -1,6 +1,8 @@
 :root {
     --common-color-1: #EE905A;
     --common-color-2: #D0D0D0;
+    --common-color-3: #1F1713;
+    --common-color-4: #403026;
 }
 
 .container {
@@ -8,6 +10,10 @@
     max-width: 80%;
     margin: auto;
     padding: 0;
+}
+
+.title {
+    color: var(--common-color-1);
 }
 
 .button {
@@ -18,32 +24,8 @@
     color: var(--common-color-1);
 }
 
-.title {
-    color: var(--common-color-1);
-}
-
 .descrizione {
     margin-bottom: 50px;
-}
-
-.boxCartaDelGiorno {
-    display: flex;
-    justify-content: center;
-}
-
-.carta {
-    margin-top: 70px;
-    max-width: 60%;
-    padding: 20px 20px;
-    border: solid 1px var(--common-color-1);
-    border-radius: 30px;
-    box-shadow: 1px 1px 25px 10px rgba(250, 111, 31, 0.07)
-}
-
-.nomeCarta {
-    font-size: 30px;
-    font-weight: bold;
-    color: var(--common-color-1);
 }
 
 .significatoCarta,
@@ -52,6 +34,24 @@
     color: var(--common-color-2);
 }
 
-.titlePage {
-    font-size: 20px;
+.boxCarte {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
+
+.nomeCarta {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--common-color-1);
+}
+
+.carta {
+  background: #f5f5f5;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
