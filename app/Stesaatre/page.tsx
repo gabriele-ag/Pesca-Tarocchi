@@ -14,7 +14,11 @@ export default function StesaATre() {
     const pescaCarta = () => {
         const cartaCasuale = Math.floor(Math.random() * tarots.length)
         const cartaPescata = tarots[cartaCasuale]
-        setCarta([...carte, cartaPescata])
+        if (carte.some(curCard => curCard.nome === cartaPescata.nome)) {
+                pescaCarta()
+            } else {
+                setCarta([...carte, cartaPescata])
+            }
     }
 
     const limiteCarte = carte.length >= 3
