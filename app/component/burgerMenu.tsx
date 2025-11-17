@@ -1,3 +1,4 @@
+'use client'
 
 import Link from "next/link"
 import styles from "./CSS/burgermenu.module.css"
@@ -33,14 +34,14 @@ export default function BurgerMenu() {
 
 
     return (
-        <div>
+
+            <div className={styles.wrapper}>
+
             <button 
             className={`${styles.buttonBurger} ${open ? styles.open : ""}`}
             onClick={() => setOpen(!open)}>
               <i className="fa-solid fa-bars buttonMenu"></i>
             </button>
-            
-            <div className={styles.wrapper}>
 
 
                 <nav className={`${styles.burgerMenu} ${open ? styles.open : ""}`}>
@@ -54,6 +55,6 @@ export default function BurgerMenu() {
                 </nav>                         
 
             </div>
-        </div>
+        
     )
 }

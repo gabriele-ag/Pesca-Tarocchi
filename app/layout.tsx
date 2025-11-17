@@ -67,7 +67,7 @@ export default function RootLayout({
               <Link className="link-nav" href={"/Ruotadellanno"}>Ruota dell'anno</Link>
               <Link className="link-nav" href={"/Stesaatre"}>Stesa a tre carte</Link>
             </nav>
-            <BurgerMenu/>
+          <BurgerMenu/>
           </div>
         </header>
         <main>

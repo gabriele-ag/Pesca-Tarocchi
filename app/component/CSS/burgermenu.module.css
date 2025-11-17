@@ -2,18 +2,12 @@
     display: none;
 }
 
-.buttonBurger {
-    display: none;
-  
-  }
-
 @media screen and (max-width: 768px) {
     .wrapper {
         display: block;
     }
 
     .buttonBurger {
-        display: block;
         color: var(--common-color-2);
     }
 
