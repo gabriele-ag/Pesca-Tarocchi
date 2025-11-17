@@ -3,7 +3,7 @@
 :root {
   --background: #1F1F1F;
   --foreground: #171717;
-  --common-color-1: #ee905a;
+  --common-color-1: #eea95a;
   --common-color-2: #D0D0D0;
   --common-color-3: #1F1713;
   --common-color-4: #403026;
@@ -17,7 +17,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--common-color-3);  
+  background-color: var(--foreground);  
 }
 
 .hero {
@@ -53,7 +53,9 @@ body {
 }
 
 .link-nav:hover,
-.link-nav:focus {
+.link-nav:focus,
+.description,
+.logo {
   color: #eea95a;
 }
 
@@ -69,6 +71,18 @@ body {
 .description {
   font-size: 30px;
   font-family: var(--font-bodoni);
-  color: var(--common-color-2);
   text-align: center;
+}
+
+/* VIDEO BACKGROUND */
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.1;
 }
