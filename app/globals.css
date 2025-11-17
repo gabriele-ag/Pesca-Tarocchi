@@ -17,7 +17,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--common-color-3);  
+  background-color: var(--background);  
 }
 
 .hero {
@@ -85,4 +85,44 @@ body {
   object-fit: cover;
   z-index: -1;
   opacity: 0.1;
+}
+
+
+/* MEDIA QUERY */
+
+.button-burger {
+  display: none;
+}
+
+.buttonMenu {
+  font-size: 25px;
+  color: var(--common-color-2);
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .title-home {
+    font-size: 100px;
+  }
+
+  .description {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .title-home {
+    font-size: 60px;
+  }
+  
+  .header-flex {
+    padding: 25px 50px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
 }

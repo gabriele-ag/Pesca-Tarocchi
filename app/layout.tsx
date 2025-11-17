@@ -5,6 +5,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import "./globals.css";
 
 import Link from "next/link";
+import BurgerMenu from "./component/burgerMenu";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -66,6 +67,7 @@ export default function RootLayout({
               <Link className="link-nav" href={"/Ruotadellanno"}>Ruota dell'anno</Link>
               <Link className="link-nav" href={"/Stesaatre"}>Stesa a tre carte</Link>
             </nav>
+            <BurgerMenu/>
           </div>
         </header>
         <main>
