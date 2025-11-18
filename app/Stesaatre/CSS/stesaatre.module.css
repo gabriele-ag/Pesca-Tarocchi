@@ -26,10 +26,11 @@
     font-size: 50px;
     font-family: var(--font-unifraktur), cursive;
     color: var(--common-color-1);
+    margin-bottom: 30px;
 }
 
 .img {
-    max-width: 250px;
+    max-width: 200px;
 }
 
 .button,
@@ -76,8 +77,8 @@
     padding: 10px 10px;
 }
 
-.nomeCarta {
-    font-size: 30px;
-    font-weight: bold;
-    color: var(--common-color-1);
+@media screen and (max-width: 768px) {
+    .img {
+        max-width: 180px;
+    }
 }

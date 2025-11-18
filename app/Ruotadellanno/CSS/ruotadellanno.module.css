@@ -17,6 +17,9 @@
     padding: 130px 0;
 }
 
+.img {
+    max-width: 200px;
+}
 
 .containerText {
     max-width: 60%;
@@ -27,11 +30,13 @@
     font-size: 50px;
     font-family: var(--font-unifraktur), cursive;
     color: var(--common-color-1);
+    margin-bottom: 30px;
 }
 
 .title2 {
     font-size: 30px;
     color: var(--common-color-1);
+    margin-bottom: 30px;
 }
 
 .button,
@@ -70,7 +75,6 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
-    max-width: 50%;
 }
 
 .nomeCarta {
@@ -80,12 +84,9 @@
 }
 
 .carta {
-    flex: 0 0 calc(33.333% - 50px);
-    padding: 1rem;
-    text-align: center;
+    padding: 10px;
     border-radius: 20px;
     background: #fff;
-    position: relative;
 }
 
 
