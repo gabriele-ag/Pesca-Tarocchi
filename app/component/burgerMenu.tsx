@@ -34,27 +34,24 @@ export default function BurgerMenu() {
 
 
     return (
+        <>
+            <div className={styles.buttonBurger}>
+                <button 
+                onClick={() => setOpen(!open)}>
+                <i className="fa-solid fa-bars buttonMenu"></i>
+                </button>
+            </div>
 
-            <div className={styles.wrapper}>
-
-            <button 
-            className={`${styles.buttonBurger} ${open ? styles.open : ""}`}
-            onClick={() => setOpen(!open)}>
-              <i className="fa-solid fa-bars buttonMenu"></i>
-            </button>
-
-
-                <nav className={`${styles.burgerMenu} ${open ? styles.open : ""}`}>
+            <nav className={`${styles.burgerMenu} ${open ? styles.open : ""}`}>
                     <ul>
                         {linkNav.map((curLink, index) => (
-                            <li key={index}>
-                                <Link href={curLink.url}>{curLink.title}</Link>
+                            <li className={styles.boxLinks} key={index}>
+                                <Link className={styles.links} href={curLink.url}>{curLink.title}</Link>
                             </li>
                         ))}
                     </ul>
-                </nav>                         
-
-            </div>
+            </nav>                         
+        </>
         
     )
 }
