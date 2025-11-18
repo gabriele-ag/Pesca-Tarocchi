@@ -16,6 +16,8 @@
 .links {
     text-align: right;
     color: var(--common-color-2);
+    font-family: var(--font-bodoni);
+    font-size: 25px;
 }
 
 @media screen and (max-width: 768px) {
@@ -35,8 +37,8 @@
         top: 50px;
         right: 0;
         background: var(--common-color-2);
-        padding: 20px;
-        margin-top: 20px;
+        padding: 20px 50px 20px;
+        margin-top: 40px;
         width: 100%;
 
         background: rgba(31, 23, 19, 0.8);
