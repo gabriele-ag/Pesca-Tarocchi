@@ -43,6 +43,10 @@
   .nav {
     display: none;
   }
+
+  .headerFlex {
+    padding: 25px 50px;
+  }
 }
 
 @media screen and (max-width: 425px) {
