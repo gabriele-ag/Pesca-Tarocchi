@@ -12,8 +12,12 @@ export default function StesaATre() {
     const { tarots } = useTarot()
 
     const [carte, setCarte] = useState<Array<(typeof tarots)[number]>>([])
+    const [pesca, setPesca] = useState(false)
 
     const pescaCarta = () => {
+        if (pesca) return
+        setPesca(true)
+        
         const nuoveCarte: Array<(typeof tarots)[number]> = []
 
             while (nuoveCarte.length < 3) {
@@ -36,6 +40,7 @@ export default function StesaATre() {
             if(carte.length === 3) {
                 setCarte([])
             }
+            setPesca(false)
         }
 
     const limiteCarte = carte.length >= 3

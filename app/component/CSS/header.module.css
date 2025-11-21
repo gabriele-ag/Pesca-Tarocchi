@@ -1,3 +1,10 @@
+:root {
+  --common-color-1: #ee905a;
+  --common-color-2: #D0D0D0;
+  --common-color-3: #1F1713;
+  --common-color-4: #403026;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -5,7 +12,8 @@
 }
 
 .scrolled {
-  background-color: var(--common-color-3);
+  background-color: #1F1713;
+  box-shadow: 2px 2px 15px 15px var(--common-color-3);
 }
 
 .headerFlex {

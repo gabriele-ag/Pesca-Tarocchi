@@ -13,6 +13,7 @@ export default function RuotaDellanno() {
 
         
         const [carte, setCarte] = useState<Array<(typeof tarots)[number]>>([])
+        const [pesca, setPesca] = useState(false)
 
         const mesi = [
             "Gennaio", "Febbraio", "Marzo", "Aprile",
@@ -22,6 +23,8 @@ export default function RuotaDellanno() {
 
     
         const pescaCarta = () => {
+            if (pesca) return
+            setPesca(true)
             
             const nuoveCarte: Array<(typeof tarots)[number]> = []
 
@@ -45,6 +48,7 @@ export default function RuotaDellanno() {
             if(carte.length === 13) {
                 setCarte([])
             }
+            setPesca(false)
         }
     
         const limiteCarte = carte.length >= 13
