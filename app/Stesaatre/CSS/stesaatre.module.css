@@ -38,18 +38,35 @@
     font-family: var(--font-bodoni), serif;    
 }
 
+.boxButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
 .button {
     padding: 8px 10px;
     border: 1px solid var(--common-color-1);
     cursor: pointer;
     border-radius: 30px;
     color: var(--common-color-1);
-    margin-bottom: 50px;
 }
 
 .button:hover {
     color: var(--common-color-3);
     background-color: var(--common-color-1);
+}
+
+.resetDisabled {
+    padding: 8px 10px;
+    border: 1px solid var(--common-color-1);
+    cursor: pointer;
+    border-radius: 30px;
+    color: var(--common-color-1);
+    opacity: 0.2;
+    cursor: not-allowed;
 }
 
 .descrizione {
@@ -80,5 +97,11 @@
 @media screen and (max-width: 768px) {
     .img {
         max-width: 180px;
+    }
+
+    .boxButtons {
+        flex-direction: column;
+        justify-content: none;
+        gap: 20px;
     }
 }

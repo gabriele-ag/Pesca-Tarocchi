@@ -12,7 +12,7 @@ export default function RuotaDellanno() {
         const { tarots } = useTarot()
 
         
-        const [carte, setCarta] = useState<Array<(typeof tarots)[number]>>([])
+        const [carte, setCarte] = useState<Array<(typeof tarots)[number]>>([])
 
         const mesi = [
             "Gennaio", "Febbraio", "Marzo", "Aprile",
@@ -36,9 +36,15 @@ export default function RuotaDellanno() {
 
             nuoveCarte.forEach((curCarta, i) => {
                 setTimeout(() => {
-                    setCarta(prev => [...prev, curCarta])
+                    setCarte(prev => [...prev, curCarta])
                 }, i * 400)
             })
+        }
+
+        const resetPescata = () => {
+            if(carte.length === 13) {
+                setCarte([])
+            }
         }
     
         const limiteCarte = carte.length >= 13
@@ -50,7 +56,10 @@ export default function RuotaDellanno() {
                     <div className={styles.containerText}>
                         <p className={styles.descrizione}>Un viaggio attraverso le stagioni della tua vita. La Ruota dell’Anno rivela i cicli di trasformazione, i momenti di crescita e le tappe fondamentali che scandiscono il tuo percorso interiore.</p>
                     </div>
-                    <button className={styles.button} onClick={pescaCarta} disabled={limiteCarte}>{limiteCarte ? 'Tutte le carte pescate' : 'Pesca carta'}</button>
+                    <div className={styles.boxButtons}>
+                        <button className={styles.button} onClick={pescaCarta} disabled={limiteCarte}>{limiteCarte ? 'Tutte le carte pescate' : 'Pesca carta'}</button>
+                        <button className={carte.length === 13 ? styles.button : styles.resetDisabled} onClick={resetPescata} disabled={carte.length < 13}>Ricomincia</button>
+                    </div>
 
                     {carte.length > 0 && (
                         <div className={`${styles.boxCarte} ${styles.container}`}>
