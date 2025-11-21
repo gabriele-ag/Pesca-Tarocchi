@@ -94,3 +94,10 @@
     box-shadow: 0 0 30px 10px rgba(238, 144, 90, 0.5);
 }
 
+.mese {
+    font-family: var(--font-bodoni), serif;
+    color: var(--common-color-1);
+    font-size: 20px;
+    margin-bottom: 10px;  
+}
+

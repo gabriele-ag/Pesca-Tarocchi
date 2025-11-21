@@ -1,12 +1,9 @@
 'use client';
 
 import "./globals.css";
-import { useTarot } from "./component/useTarot";
 
 
 export default function Home() {
-
-  const { tarots } = useTarot()
 
   return (
     <>
