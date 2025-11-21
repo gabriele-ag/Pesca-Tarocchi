@@ -8,7 +8,7 @@ import styles from "./CSS/ruotadellanno.module.css"
 import "animate.css"
 
 
-export default function RuotaDelGiorno() {
+export default function RuotaDellanno() {
         const { tarots } = useTarot()
 
         
