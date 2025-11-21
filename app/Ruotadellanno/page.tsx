@@ -1,6 +1,6 @@
 'use client'
 
-import { useMemo, useState, useRef, useEffect } from "react"
+import { useState } from "react"
 import { useTarot } from "../component/useTarot"
 
 // CSS
