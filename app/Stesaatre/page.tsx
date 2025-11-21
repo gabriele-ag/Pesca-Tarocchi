@@ -14,13 +14,22 @@ export default function StesaATre() {
     const [carte, setCarta] = useState<Array<(typeof tarots)[number]>>([])
 
     const pescaCarta = () => {
-        const cartaCasuale = Math.floor(Math.random() * tarots.length)
-        const cartaPescata = tarots[cartaCasuale]
-        if (carte.some(curCard => curCard.nome === cartaPescata.nome)) {
-                pescaCarta()
-            } else {
-                setCarta([...carte, cartaPescata])
+        const nuoveCarte: Array<(typeof tarots)[number]> = []
+
+            while (nuoveCarte.length < 3) {
+                const cartaCasuale = Math.floor(Math.random() * tarots.length)
+                const cartaPescata = tarots[cartaCasuale]
+
+                if (!nuoveCarte.some(curCard => curCard.nome === cartaPescata.nome)) {
+                nuoveCarte.push(cartaPescata)
+                }
             }
+
+            nuoveCarte.forEach((curCarta, i) => {
+                setTimeout(() => {
+                    setCarta(prev => [...prev, curCarta])
+                }, i * 400)
+            })
     }
 
     const limiteCarte = carte.length >= 3

@@ -24,7 +24,6 @@ export default function RuotaDellanno() {
         const pescaCarta = () => {
             
             const nuoveCarte: Array<(typeof tarots)[number]> = []
-            console.log(nuoveCarte)
 
             while (nuoveCarte.length < 13) {
                 const cartaCasuale = Math.floor(Math.random() * tarots.length)
