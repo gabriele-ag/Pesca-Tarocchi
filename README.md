@@ -26,6 +26,6 @@ Pesca Tarocchi è una Web App pensata durante un dialogo, sui medesimi, tra amic
 
 
 ### Note sul progetto:
-- L'applicazione non contiene tutorial o guide sulla lettura dei tarocchi: è pensata esclusivamente per chi già conosce il mondo dei tarocchi
-- Il progetto è da ritenersi come lavoro da portfolio e esercizio di sviluppo front-end, senza alcun fine di lucro o distribuzione commerciale. Tutte le immagini e i video presenti sono di proprietà dei rispettivi autori e conseguente protetti da copyright, impiegati unicamente a scopo dimostrativo.
+- L'applicazione non contiene tutorial o guide sulla lettura dei tarocchi: è pensata esclusivamente per chi già conosce il mondo dei tarocchi e potrebbero esserci errori
+- Il progetto è da ritenersi come lavoro da portfolio e esercizio di sviluppo, senza alcun fine di lucro o distribuzione commerciale. Tutte le immagini e i video presenti sono di proprietà dei rispettivi autori e conseguente protetti da copyright, impiegati unicamente a scopo dimostrativo.
 - Non è prevista alcuna pubblicazione o monetizzazione
