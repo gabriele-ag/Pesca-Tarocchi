@@ -57,6 +57,28 @@ body {
   opacity: 0.1;
 }
 
+/* NOT-FOUND */
+
+.notfound-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 300px 0;
+}
+
+.notfound-title {
+  font-family: var(--font-bodoni);
+  font-size: 30px;
+  color: var(--common-color-1);
+}
+
+.notfound-title2 {
+  font-family: var(--font-bodoni);
+  font-size: 25px;
+  color: var(--common-color-2);
+}
+
 
 /* MEDIA QUERY */
 
@@ -78,5 +100,13 @@ body {
 
   .description {
     font-size: 20px;
+  }
+
+  .notfound-title {
+    font-size: 20px;
+  }
+
+  .notfound-title2 {
+    font-size: 17px;
   }
 }

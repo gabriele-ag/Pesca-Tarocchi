@@ -57,13 +57,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
+
   return (
 
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${arimo.variable} ${robotoMono.variable} ${unifraktur.variable} ${bodoni.variable} antialiased`}
       >
-        <Header/>
+        <Header />
         <main>
           {children}
         </main>
