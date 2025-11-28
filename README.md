@@ -24,6 +24,8 @@ Pesca Tarocchi è una Web App pensata durante un dialogo, sui medesimi, tra amic
 - CSS Modules + Animate.css
 - Custom Hook per gestione del mazzo e delle carte
 
+Per il lato back-end, fai riferimento a questa repository https://github.com/gabriele-ag/pescatarocchibackend
+
 
 ### Note sul progetto:
 - L'applicazione non contiene tutorial o guide sulla lettura dei tarocchi: è pensata esclusivamente per chi già conosce il mondo dei tarocchi e potrebbero esserci errori
