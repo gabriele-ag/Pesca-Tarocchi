@@ -18,13 +18,14 @@ export function useTarot() {
     
     async function fetchTarot(): Promise<Tarot[]> {
         try {
-            const response = await fetch(`${apiUrl}`);
+            const response = await fetch(`${apiUrl}/tarots`);
             if (!response.ok) {
                 throw new Error('Errore nel recupero dei tarocchi');
             }
             
             const results: ApiResponse = await response.json()
             setTarots(results.data)
+            console.log(results.data)
             return results.data
         } catch (error) {
             console.error('Errore nel recupero dei tarocchi:', error)

@@ -14,6 +14,7 @@ type CartaEstratta = Tarot & {
 export default function CartaDelGiorno() {
 
     const { tarots } = useTarot()
+    const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL
 
     const [carta, setCarta] = useState<CartaEstratta | null>(null)
     const [data, setData] = useState<string | null>(null)
@@ -84,7 +85,7 @@ export default function CartaDelGiorno() {
                     {carta && (
                         <>
                             <div className={`${styles.carta} animate_animated animate_bounce`}>
-                                <img className={styles.img} src={carta.img} alt={carta.nome} />
+                                <img className={styles.img} src={`${BASE_URL}${carta.img}`} alt={carta.nome} />
                             </div>
                             <div>
                                 <h4 className={styles.titleSignificato}>Significato</h4>

@@ -9,8 +9,10 @@ import "animate.css"
 
 
 export default function RuotaDellanno() {
-        const { tarots } = useTarot()
 
+
+        const { tarots } = useTarot()
+        const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL
         
         const [carte, setCarte] = useState<Array<(typeof tarots)[number]>>([])
         const [pesca, setPesca] = useState(false)
@@ -72,7 +74,7 @@ export default function RuotaDellanno() {
                                         <h4 className={styles.mese}>{index === 12 ? "Centrale" : mesi[index]}</h4>                                 
                                         <div 
                                         className={`${styles.carta} ${index === 12 ? styles.centrale : ""} animate__animated animate__fadeInDown`}>
-                                            <img className={styles.img} src={curCard.img} alt={curCard.nome} />                                                              
+                                            <img className={styles.img} src={`${BASE_URL}${curCard.img}`} alt={curCard.nome} />                                                              
                                         </div>
                                     </div>   
                             ))}

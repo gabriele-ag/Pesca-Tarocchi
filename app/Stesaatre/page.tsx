@@ -10,41 +10,41 @@ import "animate.css"
 export default function StesaATre() {
 
     const { tarots } = useTarot()
-
+    const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL
+    
     const [carte, setCarte] = useState<Array<(typeof tarots)[number]>>([])
     const [pesca, setPesca] = useState(false)
-
+    
     const pescaCarta = () => {
         if (pesca) return
         setPesca(true)
         
         const nuoveCarte: Array<(typeof tarots)[number]> = []
-
-            while (nuoveCarte.length < 3) {
-                const cartaCasuale = Math.floor(Math.random() * tarots.length)
-                const cartaPescata = tarots[cartaCasuale]
-
-                if (!nuoveCarte.some(curCard => curCard.nome === cartaPescata.nome)) {
+        
+        while (nuoveCarte.length < 3) {
+            const cartaCasuale = Math.floor(Math.random() * tarots.length)
+            const cartaPescata = tarots[cartaCasuale]
+            
+            if (!nuoveCarte.some(curCard => curCard.nome === cartaPescata.nome)) {
                 nuoveCarte.push(cartaPescata)
-                }
             }
-
-            nuoveCarte.forEach((curCarta, i) => {
-                setTimeout(() => {
-                    setCarte(prev => [...prev, curCarta])
-                }, i * 400)
-            })
-    }
-
-    const resetPescata = () => {
-            if(carte.length === 3) {
-                setCarte([])
-            }
-            setPesca(false)
         }
-
-    const limiteCarte = carte.length >= 3
+        
+        nuoveCarte.forEach((curCarta, i) => {
+            setTimeout(() => {
+                setCarte(prev => [...prev, curCarta])
+            }, i * 400)
+        })
+    }
     
+    const resetPescata = () => {
+        if(carte.length === 3) {
+            setCarte([])
+        }
+        setPesca(false)
+    }
+    
+    const limiteCarte = carte.length >= 3
 
     return (
         <section className={styles.section}>
@@ -61,7 +61,7 @@ export default function StesaATre() {
                     <div className={styles.boxCarte}>
                         {carte.map((curCard, index) => (
                             <div className={`${styles.carta} animate__animated animate__fadeInDown`} key={index}>
-                                <img className={styles.img} src={curCard.img} alt={curCard.nome} />
+                                <img className={styles.img} src={`${BASE_URL}${curCard.img}`} alt={curCard.nome} />
                             </div>
                         ))}
                     </div>
