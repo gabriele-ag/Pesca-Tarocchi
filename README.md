@@ -2,6 +2,8 @@
 
 Pesca Tarocchi è una Web App pensata durante un dialogo, sui medesimi, tra amici, portata in vita e sviluppata con Next.js. Un viaggio simbolico attraverso diverse attività quali: Carta del giorno, Ruota dell'anno e Stesa a tre carte.
 
+Per provare la web app, ecco l'url: https://pesca-tarocchi-ag.vercel.app/
+
 
 ### 🎯 Obiettivi
 
